@@ -47,7 +47,7 @@ export function Signup() {
             Choose your account type
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Select how you want to use KaamKonnect
+            Select how you want to use HandyHive
           </p>
         </div>
 
@@ -95,8 +95,8 @@ export function Signup() {
             </h1>
             <p className="mt-2 text-gray-600">
               {role === 'provider' 
-                ? 'Start offering your services on KaamKonnect'
-                : 'Join KaamKonnect to find trusted service providers'
+                ? 'Start offering your services on HandyHive'
+                : 'Join HandyHive to find trusted service providers'
               }
             </p>
             <button

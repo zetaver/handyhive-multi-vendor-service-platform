@@ -34,14 +34,20 @@ A comprehensive platform connecting customers with verified service providers fo
 ## 📱 Screenshots
 
 ### Landing Page
-![Landing Page](./docs/screenshots/landing-page.png)
+![Landing Page](./docs/screenshots/home.png)
 *Modern landing page with service categories and call-to-action*
 
 ### Authentication
 ![Login Page](./docs/screenshots/login.png)
 *Clean login interface*
 
-![Signup Page](./docs/screenshots/signup.png)
+![Signup Page](./docs/screenshots/signup_1.png)
+*Responsive signup form with Google Maps integration*
+
+![Signup Page](./docs/screenshots/signupcustomer.png)
+*Responsive signup form with Google Maps integration*
+
+![Signup Page](./docs/screenshots/signup_serviceprovider.png)
 *Responsive signup form with Google Maps integration*
 
 ### Customer Dashboard

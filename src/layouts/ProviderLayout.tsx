@@ -33,7 +33,7 @@ export function ProviderLayout() {
         <div className="flex min-h-0 flex-1 flex-col border-r border-gray-200 bg-white">
           <div className="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
             <div className="flex flex-shrink-0 items-center px-4">
-              <h1 className="text-xl font-bold text-indigo-600">KaamKonnect</h1>
+              <h1 className="text-xl font-bold text-indigo-600">HandyHive</h1>
             </div>
             <nav className="mt-8 flex-1 space-y-1 px-2">
               {navigationItems.map((item) => (
@@ -69,7 +69,7 @@ export function ProviderLayout() {
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-20 bg-white border-b border-gray-200">
         <div className="px-4 h-16 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-indigo-600">KaamKonnect</h1>
+          <h1 className="text-xl font-bold text-indigo-600">HandyHive</h1>
           <button className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
             <span className="sr-only">Open menu</span>
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

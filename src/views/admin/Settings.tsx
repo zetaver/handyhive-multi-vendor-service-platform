@@ -6,9 +6,9 @@ import {
 
 export function AdminSettings() {
   const [generalSettings, setGeneralSettings] = useState({
-    siteName: 'KaamKonnect',
-    siteUrl: 'https://kaamkonnect.com',
-    adminEmail: 'admin@kaamkonnect.com',
+    siteName: 'HandyHive',
+    siteUrl: 'https://HandyHive.com',
+    adminEmail: 'admin@HandyHive.com',
     timezone: 'Asia/Kolkata',
   });
 

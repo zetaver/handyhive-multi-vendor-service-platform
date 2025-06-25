@@ -118,7 +118,7 @@ export function DashboardLayout() {
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
           {/* Mobile Header */}
           <div className="lg:hidden bg-white shadow-sm p-4 flex items-center justify-between">
-            <h1 className="text-xl font-semibold text-gray-900">KaamKonnect</h1>
+            <h1 className="text-xl font-semibold text-gray-900">HandyHive</h1>
             <button
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
               className="p-2 rounded-md text-gray-600 hover:bg-gray-100"

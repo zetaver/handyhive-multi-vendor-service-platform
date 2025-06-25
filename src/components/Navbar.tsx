@@ -27,7 +27,7 @@ export function Navbar({ onLoginClick, onSignupClick }: NavbarProps) {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-indigo-600">KaamKonnect</h1>
+            <h1 className="text-2xl font-bold text-indigo-600">HandyHive</h1>
           </div>
 
           {/* Desktop Navigation */}

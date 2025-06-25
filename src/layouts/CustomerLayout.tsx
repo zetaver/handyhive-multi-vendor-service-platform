@@ -28,7 +28,7 @@ export function CustomerLayout() {
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-20 bg-white border-b border-gray-200">
         <div className="px-4 h-16 flex items-center">
-          <h1 className="text-xl font-bold text-indigo-600">KaamKonnect</h1>
+          <h1 className="text-xl font-bold text-indigo-600">HandyHive</h1>
         </div>
       </div>
 
@@ -36,7 +36,7 @@ export function CustomerLayout() {
       <div className="hidden md:block fixed top-0 left-0 right-0 z-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="h-16 flex items-center justify-between">
-            <h1 className="text-xl font-bold text-indigo-600">KaamKonnect</h1>
+            <h1 className="text-xl font-bold text-indigo-600">HandyHive</h1>
             <nav className="flex items-center space-x-8">
               {navigationItems.map((item) => (
                 <button

@@ -35,7 +35,7 @@ export function DashboardNav() {
           {/* Logo and Brand */}
           <div className="flex items-center">
             <Link to="/dashboard" className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-indigo-600">KaamKonnect</h1>
+              <h1 className="text-2xl font-bold text-indigo-600">HandyHive</h1>
             </Link>
           </div>
 
