@@ -115,7 +115,7 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/handyhive.git
+   git clone https://github.com/zetaver/handyhive-multi-vendor-service-platform.git
    cd handyhive
    ```
 
@@ -392,23 +392,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- Email: support@handyhive.com
+- Email: info@zetaver.com
 - GitHub Issues: [Create an issue](https://github.com/yourusername/handyhive/issues)
 - Documentation: [Wiki](https://github.com/yourusername/handyhive/wiki)
-
-## 🔮 Future Enhancements
-
-- [ ] Mobile app development (React Native)
-- [ ] Advanced analytics dashboard
-- [ ] Multi-language support
-- [ ] Payment gateway integration
-- [ ] AI-powered service recommendations
-- [ ] Video calling for consultations
-- [ ] Service provider verification system
-- [ ] Advanced search filters
-- [ ] Subscription-based services
-- [ ] Integration with calendar apps
-
----
 
 **Made with ❤️ by the HandyHive Team**
