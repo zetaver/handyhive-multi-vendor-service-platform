@@ -2,7 +2,7 @@
 
 A comprehensive platform connecting customers with verified service providers for home maintenance, repairs, and professional services.
 
-![HandyHive Logo](./docs/screenshots/logo.png)
+![HandyHive Logo](./docs/screenshots/handyhive_logo.jpeg)
 
 ## 🌟 Features
 
