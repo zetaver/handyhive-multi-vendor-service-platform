@@ -58,9 +58,11 @@ A comprehensive platform connecting customers with verified service providers fo
 ![Provider Dashboard](./docs/screenshots/provider-dashboard.png)
 *Provider overview with earnings and job statistics*
 
+### Services
 ![Provider Services](./docs/screenshots/provider-services.png)
 *Manage service listings*
 
+### Earnings
 ![Provider Earnings](./docs/screenshots/provider-earnings.png)
 *Detailed earnings and transaction history*
 
@@ -68,9 +70,11 @@ A comprehensive platform connecting customers with verified service providers fo
 ![Admin Dashboard](./docs/screenshots/admin-dashboard.png)
 *Comprehensive admin overview*
 
+### User Management
 ![User Management](./docs/screenshots/user-management.png)
 *Manage platform users*
 
+### Analytics
 ![Analytics](./docs/screenshots/analytics.png)
 *Platform analytics and insights*
 
