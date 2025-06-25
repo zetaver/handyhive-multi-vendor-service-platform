@@ -24,6 +24,7 @@ import { Settings } from './views/dashboard/Settings';
 import { ProviderServices } from './views/provider/Services';
 import { ProviderEarnings } from './views/provider/Earnings';
 import { ProviderReviews } from './views/provider/Reviews';
+import { AdminLogin } from './views/admin/AdminLogin';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path="requests" element={<ServiceRequests />} />
             <Route path="notifications" element={<Notifications />} />
             <Route path="settings" element={<Settings />} />
+            <Route index element={<Navigate to="customer" replace />} />
           </Route>
 
           {/* Provider Dashboard Routes */}
@@ -75,6 +77,8 @@ function App() {
             <Route path="notifications" element={<AdminNotifications />} />
             <Route path="settings" element={<AdminSettings />} />
           </Route>
+
+          <Route path="/admin/login" element={<AdminLogin />} />
 
           <Route path="/" element={<LandingPage />} />
           

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { 
   LayoutDashboard, ShoppingBag, Bell, MessageSquare, 
@@ -7,12 +7,23 @@ import {
 } from 'lucide-react';
 import { getUserRole, clearAuthUser } from '../utils/auth';
 import type { UserRole } from '../types/auth';
+import { useAuth } from '../contexts/AuthContext';
 
 export function DashboardLayout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const userRole = getUserRole();
+  const { user, loading } = useAuth();
+
+  useEffect(() => {
+    if (!loading && (!user || user.role !== 'admin')) {
+      navigate('/admin/login', { replace: true });
+    }
+  }, [user, loading, navigate]);
+
+  if (loading || !user || user.role !== 'admin') {
+    return null;
+  }
 
   const getNavLinks = (role: UserRole) => {
     const commonLinks = [
@@ -28,7 +39,8 @@ export function DashboardLayout() {
           { path: '/dashboard/admin/services', label: 'Services', icon: ShoppingBag },
           { path: '/dashboard/admin/reports', label: 'Reports', icon: AlertCircle },
           { path: '/dashboard/admin/analytics', label: 'Analytics', icon: TrendingUp },
-          ...commonLinks
+          { path: '/dashboard/admin/notifications', label: 'Notifications', icon: Bell },
+          { path: '/dashboard/admin/settings', label: 'Settings', icon: SettingsIcon },
         ];
       case 'provider':
         return [
@@ -49,7 +61,7 @@ export function DashboardLayout() {
     }
   };
 
-  const sidebarLinks = userRole ? getNavLinks(userRole) : [];
+  const sidebarLinks = user ? getNavLinks(user.role) : [];
 
   const handleLogout = () => {
     clearAuthUser();
@@ -75,8 +87,8 @@ export function DashboardLayout() {
                   <User className="h-6 w-6" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold capitalize">{userRole} Dashboard</h2>
-                  <p className="text-sm text-indigo-200 capitalize">{userRole}</p>
+                  <h2 className="text-lg font-semibold capitalize">{user.role} Dashboard</h2>
+                  <p className="text-sm text-indigo-200 capitalize">{user.role}</p>
                 </div>
               </div>
             </div>

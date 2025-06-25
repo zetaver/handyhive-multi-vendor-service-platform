@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { authAPI } from '../services/api';
+import { MOCK_USERS } from '../types/auth';
 import type { User } from '../types/auth';
 
 interface AuthContextType {
@@ -22,10 +23,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const initAuth = async () => {
       const token = localStorage.getItem('token');
-      if (token) {
+      const userData = localStorage.getItem('user');
+      
+      if (token && userData) {
         try {
-          const userData = await authAPI.getCurrentUser();
-          setUser(userData);
+          setUser(JSON.parse(userData));
         } catch (error) {
           localStorage.removeItem('token');
           localStorage.removeItem('user');
@@ -40,26 +42,57 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const login = async (email: string, password: string) => {
     try {
       setError(null);
+      setLoading(true);
+
+      // Check mock users first
+      const mockUser = MOCK_USERS.find(u => u.email === email && u.password === password);
+      
+      if (mockUser) {
+        // Use mock authentication
+        const { password: _, ...userWithoutPassword } = mockUser;
+        const token = 'mock-jwt-token-' + Date.now();
+        
+        localStorage.setItem('token', token);
+        localStorage.setItem('user', JSON.stringify(userWithoutPassword));
+        setUser(userWithoutPassword);
+        return;
+      }
+
+      // Fallback to API authentication
       const { token, user } = await authAPI.login(email, password);
       localStorage.setItem('token', token);
       localStorage.setItem('user', JSON.stringify(user));
       setUser(user);
     } catch (error: any) {
-      setError(error.response?.data?.message || 'Login failed');
+      setError(error.response?.data?.message || 'Invalid email or password');
       throw error;
+    } finally {
+      setLoading(false);
     }
   };
 
   const register = async (data: any) => {
     try {
       setError(null);
-      const { token, user } = await authAPI.register(data);
+      setLoading(true);
+      
+      // For demo purposes, create a mock user
+      const newUser = {
+        id: Date.now().toString(),
+        email: data.email,
+        role: data.role,
+        name: data.fullName || data.ownerName || data.businessName,
+      };
+      
+      const token = 'mock-jwt-token-' + Date.now();
       localStorage.setItem('token', token);
-      localStorage.setItem('user', JSON.stringify(user));
-      setUser(user);
+      localStorage.setItem('user', JSON.stringify(newUser));
+      setUser(newUser);
     } catch (error: any) {
       setError(error.response?.data?.message || 'Registration failed');
       throw error;
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -72,7 +105,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const updateProfile = async (data: any) => {
     try {
       setError(null);
-      const updatedUser = await authAPI.updateProfile(data);
+      const updatedUser = { ...user, ...data };
       setUser(updatedUser);
       localStorage.setItem('user', JSON.stringify(updatedUser));
     } catch (error: any) {

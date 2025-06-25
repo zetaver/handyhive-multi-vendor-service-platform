@@ -1,8 +1,8 @@
-# KaamKonnect - Home Services Marketplace
+# HandyHive Multi-Vendor Service Platform
 
 A comprehensive platform connecting customers with verified service providers for home maintenance, repairs, and professional services.
 
-![KaamKonnect Logo](./docs/screenshots/logo.png)
+![HandyHive Logo](./docs/screenshots/logo.png)
 
 ## 🌟 Features
 
@@ -47,18 +47,12 @@ A comprehensive platform connecting customers with verified service providers fo
 ![Signup Page](./docs/screenshots/signupcustomer.png)
 *Responsive signup form with Google Maps integration*
 
-![Signup Page](./docs/screenshots/signup_serviceprovider.png)
+![Signup Page](./docs/screenshots/signupprovider.png)
 *Responsive signup form with Google Maps integration*
 
 ### Customer Dashboard
 ![Customer Dashboard](./docs/screenshots/customer-dashboard.png)
 *Personalized dashboard with quick actions and service recommendations*
-
-![Service Categories](./docs/screenshots/service-categories.png)
-*Easy-to-navigate service categories*
-
-![Active Requests](./docs/screenshots/active-requests.png)
-*Track ongoing service requests*
 
 ### Service Provider Dashboard
 ![Provider Dashboard](./docs/screenshots/provider-dashboard.png)
@@ -80,19 +74,6 @@ A comprehensive platform connecting customers with verified service providers fo
 ![Analytics](./docs/screenshots/analytics.png)
 *Platform analytics and insights*
 
-### Booking System
-![Booking Flow](./docs/screenshots/booking-flow.png)
-*Streamlined booking process*
-
-![Chat Interface](./docs/screenshots/chat.png)
-*Real-time communication between users*
-
-### Mobile Views
-![Mobile Dashboard](./docs/screenshots/mobile-dashboard.png)
-*Responsive mobile interface*
-
-![Mobile Navigation](./docs/screenshots/mobile-navigation.png)
-*Mobile-optimized navigation*
 
 ## 🚀 Tech Stack
 
@@ -134,8 +115,8 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/kaamkonnect.git
-   cd kaamkonnect
+   git clone https://github.com/yourusername/handyhive.git
+   cd handyhive
    ```
 
 2. **Install dependencies**
@@ -153,7 +134,7 @@ Before running this project, make sure you have the following installed:
    
    Create a `.env` file in the `server` directory:
    ```env
-   MONGODB_URI=mongodb://localhost:27017/kaamkonnect
+   MONGODB_URI=mongodb://localhost:27017/handyhive
    JWT_SECRET=your_jwt_secret_key_here
    PORT=5000
    ```
@@ -185,7 +166,7 @@ Before running this project, make sure you have the following installed:
 ## 🏗️ Project Structure
 
 ```
-kaamkonnect/
+handyhive/
 ├── public/                 # Static assets
 ├── src/                   # Frontend source code
 │   ├── components/        # Reusable React components
@@ -411,9 +392,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- Email: support@kaamkonnect.com
-- GitHub Issues: [Create an issue](https://github.com/yourusername/kaamkonnect/issues)
-- Documentation: [Wiki](https://github.com/yourusername/kaamkonnect/wiki)
+- Email: support@handyhive.com
+- GitHub Issues: [Create an issue](https://github.com/yourusername/handyhive/issues)
+- Documentation: [Wiki](https://github.com/yourusername/handyhive/wiki)
 
 ## 🔮 Future Enhancements
 
@@ -430,4 +411,4 @@ For support and questions:
 
 ---
 
-**Made with ❤️ by the KaamKonnect Team**
+**Made with ❤️ by the HandyHive Team**
