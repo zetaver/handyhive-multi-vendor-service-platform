@@ -6,7 +6,7 @@ export function AdminDashboard() {
     { name: 'Total Users', value: '1,234', icon: Users, change: '+12%' },
     { name: 'Active Services', value: '856', icon: ShoppingBag, change: '+23%' },
     { name: 'Open Reports', value: '12', icon: AlertCircle, change: '-5%' },
-    { name: 'Revenue', value: '₹85,640', icon: TrendingUp, change: '+18%' },
+    { name: 'Revenue', value: '$85,640', icon: TrendingUp, change: '+18%' },
   ];
 
   const recentUsers = [

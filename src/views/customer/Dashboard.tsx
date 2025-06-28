@@ -14,7 +14,7 @@ const categories = [
 const quickStats = [
   { label: 'Active Requests', value: '2' },
   { label: 'Completed Services', value: '8' },
-  { label: 'Total Spent', value: '₹12,450' },
+  { label: 'Total Spent', value: '$12,450' },
 ];
 
 export function Dashboard() {
@@ -110,7 +110,7 @@ export function Dashboard() {
               title="Bathroom Deep Cleaning"
               description="Complete bathroom cleaning including tiles and grout"
               status="3 bids received"
-              price="₹1,000 - ₹1,500"
+              price="$1,000 - $1,500"
               location="Sector 62, Noida"
               time="Posted 2 hours ago"
               dueDate="Tomorrow, 10:00 AM"
@@ -119,7 +119,7 @@ export function Dashboard() {
               title="AC Repair Service"
               description="Air conditioner not cooling properly, need urgent repair"
               status="5 bids received"
-              price="₹500 - ₹800"
+              price="$500 - $800"
               location="Sector 18, Noida"
               time="Posted 5 hours ago"
               dueDate="Today, 4:00 PM"
@@ -141,7 +141,7 @@ export function Dashboard() {
               title="Professional Plumber"
               rating={4.8}
               reviews={156}
-              price="₹400/hr"
+              price="$400/hr"
               image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
               distance="2.5 km away"
               availability="Available Today"
@@ -151,7 +151,7 @@ export function Dashboard() {
               title="House Cleaning Expert"
               rating={4.9}
               reviews={203}
-              price="₹300/hr"
+              price="$300/hr"
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
               distance="3.1 km away"
               availability="Available Tomorrow"
@@ -161,7 +161,7 @@ export function Dashboard() {
               title="Electrician"
               rating={4.7}
               reviews={128}
-              price="₹450/hr"
+              price="$450/hr"
               image="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
               distance="1.8 km away"
               availability="Available Now"

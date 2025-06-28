@@ -25,12 +25,21 @@ import { ProviderServices } from './views/provider/Services';
 import { ProviderEarnings } from './views/provider/Earnings';
 import { ProviderReviews } from './views/provider/Reviews';
 import { AdminLogin } from './views/admin/AdminLogin';
+import { ServicesPage } from './views/ServicesPage';
+import { AboutUsPage } from './views/AboutUsPage';
+import { HowItWorksPage } from './views/HowItWorksPage';
+import { CategoriesPage } from './views/CategoriesPage';
+import { ServiceDetailsPage } from './views/ServiceDetailsPage';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
         <Routes>
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/how-it-works" element={<HowItWorksPage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           
@@ -84,6 +93,8 @@ function App() {
           
           {/* Catch-all redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
+
+          <Route path="/services/:id" element={<ServiceDetailsPage />} />
         </Routes>
       </Router>
     </AuthProvider>

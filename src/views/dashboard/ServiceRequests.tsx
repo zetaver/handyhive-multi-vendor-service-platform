@@ -26,7 +26,7 @@ export function ServiceRequests() {
       id: '1',
       title: 'Need a Professional Plumber',
       description: 'Looking for a plumber to fix a leaking pipe in the bathroom.',
-      budget: '₹500-1000',
+      budget: '$500-1000',
       location: 'Sector 62, Noida',
       postedTime: '2 hours ago',
       status: 'open',
@@ -36,7 +36,7 @@ export function ServiceRequests() {
       id: '2',
       title: 'House Deep Cleaning',
       description: '3BHK apartment needs thorough cleaning including windows and balcony.',
-      budget: '₹2000-3000',
+      budget: '$2000-3000',
       location: 'Sector 18, Noida',
       postedTime: '5 hours ago',
       status: 'in-progress',
@@ -209,7 +209,7 @@ export function ServiceRequests() {
 
                 <div>
                   <label htmlFor="budget" className="block text-sm font-medium text-gray-700">
-                    Budget Range (₹)
+                    Budget Range ($)
                   </label>
                   <input
                     type="text"

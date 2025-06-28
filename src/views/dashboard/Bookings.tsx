@@ -44,7 +44,7 @@ export function Bookings() {
       status: 'upcoming',
       location: 'Sector 62, Noida',
       phone: '+91 98765 43210',
-      price: '₹1,200',
+      price: '$1,200',
       paymentStatus: 'paid',
     },
     {
@@ -61,7 +61,7 @@ export function Bookings() {
       status: 'ongoing',
       location: 'Sector 18, Noida',
       phone: '+91 98765 43211',
-      price: '₹800',
+      price: '$800',
       paymentStatus: 'pending',
     },
     {
@@ -78,7 +78,7 @@ export function Bookings() {
       status: 'completed',
       location: 'Sector 15, Noida',
       phone: '+91 98765 43212',
-      price: '₹1,500',
+      price: '$1,500',
       paymentStatus: 'paid',
     },
   ];
@@ -127,7 +127,7 @@ export function Bookings() {
           <StatCard label="Total Bookings" value="12" trend="+3 this month" />
           <StatCard label="Upcoming" value="3" trend="Next 7 days" />
           <StatCard label="Completed" value="8" trend="This month" />
-          <StatCard label="Amount Spent" value="₹12,450" trend="+15% vs last month" />
+          <StatCard label="Amount Spent" value="$12,450" trend="+15% vs last month" />
         </div>
 
         {/* Filters and Search */}

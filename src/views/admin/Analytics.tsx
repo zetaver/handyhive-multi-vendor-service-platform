@@ -5,7 +5,7 @@ export function Analytics() {
   const metrics = [
     {
       name: 'Total Revenue',
-      value: '₹1,235,340',
+      value: '$1,235,340',
       change: '+12.3%',
       trend: 'up',
       period: 'vs last month',
@@ -34,17 +34,17 @@ export function Analytics() {
   ];
 
   const topServices = [
-    { name: 'Home Cleaning', bookings: '234', revenue: '₹45,670', growth: '+15%' },
-    { name: 'Plumbing', bookings: '189', revenue: '₹38,900', growth: '+12%' },
-    { name: 'Electrical', bookings: '156', revenue: '₹32,450', growth: '+8%' },
-    { name: 'Beauty & Spa', bookings: '145', revenue: '₹29,800', growth: '+5%' },
+    { name: 'Home Cleaning', bookings: '234', revenue: '$45,670', growth: '+15%' },
+    { name: 'Plumbing', bookings: '189', revenue: '$38,900', growth: '+12%' },
+    { name: 'Electrical', bookings: '156', revenue: '$32,450', growth: '+8%' },
+    { name: 'Beauty & Spa', bookings: '145', revenue: '$29,800', growth: '+5%' },
   ];
 
   const topLocations = [
-    { name: 'Delhi NCR', users: '2,345', providers: '456', revenue: '₹4,56,780' },
-    { name: 'Mumbai', users: '2,123', providers: '389', revenue: '₹3,89,560' },
-    { name: 'Bangalore', users: '1,890', providers: '345', revenue: '₹3,45,670' },
-    { name: 'Hyderabad', users: '1,567', providers: '289', revenue: '₹2,89,450' },
+    { name: 'Delhi NCR', users: '2,345', providers: '456', revenue: '$4,56,780' },
+    { name: 'Mumbai', users: '2,123', providers: '389', revenue: '$3,89,560' },
+    { name: 'Bangalore', users: '1,890', providers: '345', revenue: '$3,45,670' },
+    { name: 'Hyderabad', users: '1,567', providers: '289', revenue: '$2,89,450' },
   ];
 
   return (

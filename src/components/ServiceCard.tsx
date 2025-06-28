@@ -16,7 +16,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
             <p className="mt-1 text-sm text-gray-500">{service.category}</p>
           </div>
           <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
-            ₹{service.price}/hr
+            ${service.price}/hr
           </span>
         </div>
         

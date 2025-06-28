@@ -3,10 +3,10 @@ import { DollarSign, TrendingUp, Calendar, Download } from 'lucide-react';
 
 export function ProviderEarnings() {
   const earnings = {
-    total: '₹45,670',
-    thisMonth: '₹12,450',
-    pending: '₹3,200',
-    completed: '₹42,470'
+    total: '$45,670',
+    thisMonth: '$12,450',
+    pending: '$3,200',
+    completed: '$42,470'
   };
 
   const recentTransactions = [
@@ -14,7 +14,7 @@ export function ProviderEarnings() {
       id: '1',
       service: 'Plumbing Repair',
       customer: 'Rahul Sharma',
-      amount: '₹1,200',
+      amount: '$1,200',
       status: 'completed',
       date: '2024-03-10'
     },
@@ -22,7 +22,7 @@ export function ProviderEarnings() {
       id: '2',
       service: 'Pipe Fitting',
       customer: 'Priya Singh',
-      amount: '₹800',
+      amount: '$800',
       status: 'pending',
       date: '2024-03-09'
     }

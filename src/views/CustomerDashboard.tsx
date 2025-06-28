@@ -102,7 +102,7 @@ export function CustomerDashboard() {
             provider="Rajesh Kumar"
             rating={4.8}
             jobs={124}
-            price="₹500/hr"
+            price="$500/hr"
             avatar="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
           />
           <ServiceCard
@@ -110,7 +110,7 @@ export function CustomerDashboard() {
             provider="Priya Singh"
             rating={4.6}
             jobs={89}
-            price="₹300/hr"
+            price="$300/hr"
             avatar="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
           />
           <ServiceCard
@@ -118,7 +118,7 @@ export function CustomerDashboard() {
             provider="Amit Patel"
             rating={4.9}
             jobs={156}
-            price="₹400/hr"
+            price="$400/hr"
             avatar="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
           />
         </div>

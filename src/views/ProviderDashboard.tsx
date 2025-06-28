@@ -1,10 +1,11 @@
 import React from 'react';
 import { Clock, DollarSign, ThumbsUp, Users } from 'lucide-react';
+import { Footer } from '../components/Footer';
 
 export function ProviderDashboard() {
   const stats = [
     { name: 'Active Jobs', value: '3', icon: Clock },
-    { name: 'Total Earnings', value: '₹15,000', icon: DollarSign },
+    { name: 'Total Earnings', value: '$15,000', icon: DollarSign },
     { name: 'Completed Jobs', value: '45', icon: ThumbsUp },
     { name: 'Total Customers', value: '32', icon: Users },
   ];
@@ -91,6 +92,7 @@ export function ProviderDashboard() {
           </ul>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

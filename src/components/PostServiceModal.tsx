@@ -154,7 +154,7 @@ export function PostServiceModal({ isOpen, onClose, onSubmit }: PostServiceModal
 
             <div>
               <label htmlFor="budget" className="block text-sm font-medium text-gray-700">
-                Budget Range (₹)
+                Budget Range ($)
               </label>
               <input
                 type="text"
